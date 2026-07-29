@@ -682,7 +682,7 @@ body.loaded .page-fade {
     }
 
     nav {
-        padding: 0 3%;
+        padding: 0 5%;          /* ← now matches container's 5% margin */
     }
 
     nav > ul {
