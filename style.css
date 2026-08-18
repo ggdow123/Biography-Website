@@ -159,6 +159,7 @@ nav > ul li:nth-child(3)::after {
     padding: 60px 2rem;
 
     background:
+        linear-gradient(to bottom, transparent 80%, #0f172a 100%),
         radial-gradient(circle at 20% 30%, rgba(37, 99, 235, 0.35), transparent 80%),
         radial-gradient(circle at 80% 70%, rgba(124, 58, 237, 0.30), transparent 80%);
 
@@ -168,6 +169,7 @@ nav > ul li:nth-child(3)::after {
 .hero-tutoring {
     min-height: 100vh;
     background:
+        linear-gradient(to bottom, transparent 80%, #0f172a 100%),
         radial-gradient(circle at 30% 20%, rgba(34, 211, 238, 0.25), transparent 80%),
         radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.25), transparent 80%);
 
