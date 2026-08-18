@@ -739,15 +739,15 @@ body.loaded .page-fade {
     .hero {
         background:
             linear-gradient(to bottom, transparent 80%, #0f172a 100%),
-            radial-gradient(circle at 25% 25%, rgba(37, 99, 235, 0.40), transparent 75%),
-            radial-gradient(circle at 85% 55%, rgba(124, 58, 237, 0.40), transparent 75%);
+            radial-gradient(circle at 18% 28%, rgba(37, 99, 235, 0.45), transparent 75%),
+            radial-gradient(circle at 82% 68%, rgba(124, 58, 237, 0.40), transparent 75%);
     }
 
     .hero-tutoring {
         background:
             linear-gradient(to bottom, transparent 80%, #0f172a 100%),
-            radial-gradient(circle at 30% 20%, rgba(34, 211, 238, 0.30), transparent 75%),
-            radial-gradient(circle at 85% 55%, rgba(168, 85, 247, 0.30), transparent 75%);
+            radial-gradient(circle at 28% 22%, rgba(34, 211, 238, 0.35), transparent 75%),
+            radial-gradient(circle at 82% 68%, rgba(168, 85, 247, 0.35), transparent 75%);
     }
 
     .hero h1 {
