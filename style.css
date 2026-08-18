@@ -152,12 +152,11 @@ nav > ul li:nth-child(3)::after {
 .hero {
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     text-align: center;
 
-    padding: 120px 2rem 60px;
+    padding: 60px 2rem;
 
     background:
         linear-gradient(to bottom, transparent 80%, #0f172a 100%),
@@ -169,8 +168,6 @@ nav > ul li:nth-child(3)::after {
 
 .hero-tutoring {
     min-height: 100vh;
-    padding-top: 120px;
-    padding-bottom: 60px;
     background:
         linear-gradient(to bottom, transparent 80%, #0f172a 100%),
         radial-gradient(circle at 30% 20%, rgba(34, 211, 238, 0.25), transparent 80%),
@@ -193,14 +190,11 @@ nav > ul li:nth-child(3)::after {
     opacity: 0;
     transform: translateY(10px);
     animation: heroFade 1.2s ease forwards;
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
 }
 
 @keyframes heroFade {
     from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    to { opacity: 1; transform: translateY(-40px); }
 }
 
 h1, h2, h3 {
@@ -577,12 +571,16 @@ footer a:hover {
     height: auto !important;
     max-width: 100%;
     display: block;
-    margin: 0 auto 1.5rem auto;
+    margin: 2rem auto 1.5rem auto;
     object-fit: contain !important;
     border: 3px solid rgba(255, 255, 255, 0.2);
     border-radius: 16px !important;
     box-shadow: 0 0 40px rgba(37, 99, 235, 0.3);
     transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s;
+}
+
+.hero-tutoring .hero-photo {
+    margin-top: 4.5rem;
 }
 
 .hero-photo:hover {
@@ -743,13 +741,17 @@ body.loaded .page-fade {
     }
 
     .hero {
-        padding-top: 100px;
-        padding-bottom: 40px;
+        background:
+            linear-gradient(to bottom, transparent 80%, #0f172a 100%),
+            radial-gradient(circle at 18% 28%, rgba(37, 99, 235, 0.45), transparent 75%),
+            radial-gradient(circle at 82% 68%, rgba(124, 58, 237, 0.40), transparent 75%);
     }
 
     .hero-tutoring {
-        padding-top: 100px;
-        padding-bottom: 40px;
+        background:
+            linear-gradient(to bottom, transparent 80%, #0f172a 100%),
+            radial-gradient(circle at 28% 22%, rgba(34, 211, 238, 0.35), transparent 75%),
+            radial-gradient(circle at 82% 68%, rgba(168, 85, 247, 0.35), transparent 75%);
     }
 
     .hero h1 {
