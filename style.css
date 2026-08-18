@@ -568,14 +568,17 @@ footer a:hover {
 
 .hero-photo {
     width: 240px;
-    height: auto !important;
+    height: 260px !important;
     max-width: 100%;
     display: block;
-    margin: 2rem auto 1.5rem auto;
+    margin: 0 auto 1.5rem auto;
     object-fit: contain !important;
+    object-position: top center;
+
     border: 3px solid rgba(255, 255, 255, 0.2);
     border-radius: 16px !important;
     box-shadow: 0 0 40px rgba(37, 99, 235, 0.3);
+
     transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s;
 }
 
@@ -771,11 +774,13 @@ body.loaded .page-fade {
         margin-top: 2rem;
     }
 
-    .hero-photo {
-        width: 180px;
-        height: auto !important;
-        border-radius: 16px !important;
-    }
+.hero-photo {
+    width: 180px;
+    height: 220px !important;
+    object-fit: contain !important;
+    object-position: top center;
+    border-radius: 16px !important;
+}
 
     .main-logo {
         width: 130px;
