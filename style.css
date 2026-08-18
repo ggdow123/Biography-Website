@@ -171,6 +171,7 @@ nav > ul li:nth-child(3)::after {
     min-height: 100vh;
     padding-top: 120px;
     padding-bottom: 60px;
+
     background:
         linear-gradient(to bottom, transparent 80%, #0f172a 100%),
         radial-gradient(circle at 30% 20%, rgba(34, 211, 238, 0.25), transparent 80%),
@@ -199,11 +200,20 @@ nav > ul li:nth-child(3)::after {
 }
 
 @keyframes heroFade {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
     letter-spacing: 0.3px;
@@ -265,7 +275,12 @@ h1, h2, h3 {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.2),
+        transparent
+    );
     transition: left 0.5s ease;
 }
 
@@ -299,7 +314,9 @@ section {
 
 section:hover {
     transform: translateY(-4px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(37, 99, 235, 0.1);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.4),
+        0 0 20px rgba(37, 99, 235, 0.1);
     border-color: rgba(37, 99, 235, 0.2);
 }
 
@@ -335,7 +352,11 @@ section:hover {
     text-align: center;
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.06);
-    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s, background 0.3s;
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s,
+        border-color 0.3s,
+        background 0.3s;
 
     display: flex;
     flex-direction: column;
@@ -345,7 +366,9 @@ section:hover {
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 15px rgba(37, 99, 235, 0.3);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.5),
+        0 0 15px rgba(37, 99, 235, 0.3);
     border-color: rgba(37, 99, 235, 0.6);
     background: rgba(37, 99, 235, 0.08);
 }
@@ -446,7 +469,10 @@ section:hover {
     border-radius: 16px;
     padding: 2rem 1.8rem;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s;
 }
 
 .testimonial-card:hover {
@@ -508,12 +534,17 @@ section:hover {
     border-radius: 16px;
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s;
 }
 
 .image-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(37, 99, 235, 0.2);
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.5),
+        0 0 15px rgba(37, 99, 235, 0.2);
     border-color: rgba(37, 99, 235, 0.4);
 }
 
@@ -574,15 +605,24 @@ footer a:hover {
 
 .hero-photo {
     width: 240px;
-    height: auto !important;
+    height: 260px !important;
     max-width: 100%;
+
     display: block;
     margin: 0 auto 1.5rem auto;
+
     object-fit: contain !important;
+    object-position: top center;
+
     border: 3px solid rgba(255, 255, 255, 0.2);
     border-radius: 16px !important;
+
     box-shadow: 0 0 40px rgba(37, 99, 235, 0.3);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s;
 }
 
 .hero-photo:hover {
@@ -673,7 +713,10 @@ body.loaded .page-fade {
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s;
     z-index: 999;
     box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
     backdrop-filter: blur(10px);
@@ -702,6 +745,7 @@ body.loaded .page-fade {
 }
 
 @media (max-width: 767px) {
+
     body {
         padding-top: 70px;
     }
@@ -771,7 +815,9 @@ body.loaded .page-fade {
 
     .hero-photo {
         width: 180px;
-        height: auto !important;
+        height: 220px !important;
+        object-fit: contain !important;
+        object-position: top center;
         border-radius: 16px !important;
     }
 
